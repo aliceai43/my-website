@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+}
+
+/* 右边名字和自我介绍 */
+.intro {
+    flex: 1;
+    color: #333;
+    text-align: right; /* 确保文字内容靠右对齐 */
+}
+
+.intro h1 {
+    font-size: 120px; /* 名字的字体大小 */
+    margin: 20;
+    letter-spacing: 20px;
+}
+
+/* 图片样式 */
+.selfie {
+    /* border-radius: 50%; */
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.about-box {
+    background-color: #d3d3d3; /* 灰色背景 */
+    border-radius: 0%; /* 圆角50%实现椭圆 */
+    width: 60%; /* 设定宽度 */
+    padding: 30px; /* 内边距 */
+    margin: 20px auto; /* 自动居中 */
+    text-align: center; /* 文本居中 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 自定义文字样式 */
+.about-box p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+ /* 技能图片网格布局 */
+ .skills-container {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 自适应网格布局 */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.skill-item img:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+.skill-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
