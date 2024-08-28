@@ -1,16 +1,30 @@
-// 切换导航栏显示
 function toggleMenu() {
     var navList = document.getElementById("navList");
     navList.classList.toggle("active");
 }
 
-// 监听点击事件，收起菜单
+
+function toggleDropdown() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    var dropdownIcon = document.getElementById("dropdownIcon");
+
+    if (dropdownMenu.classList.contains("show")) {
+        dropdownMenu.classList.remove("show");
+        dropdownIcon.src = "img/down-arrow.png";
+    } else {
+        dropdownMenu.classList.add("show");
+        dropdownIcon.src = "img/up-arrow.png"; 
+    }
+}
+
+//點擊選單外的地方收起選單
 document.addEventListener('click', function(event) {
     var navList = document.getElementById("navList");
     var menuButton = document.querySelector('.menu-button');
     
-    // 如果点击的不是菜单按钮或菜单列表，且菜单是打开的，关闭菜单
     if (!menuButton.contains(event.target) && !navList.contains(event.target)) {
         navList.classList.remove("active");
     }
 });
+
+

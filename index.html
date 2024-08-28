@@ -5,30 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Alice Huang</title>
 </head>
 
 <body>
 
-    <!-- 导航栏 -->
+    <!-- menu -->
     <div class="navbar">
         <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
     
-    <!-- 隐藏的导航列表 -->
+    <!-- project -->
     <div class="nav-list" id="navList">
         <a href="index.html">Home</a>
-        <a href="project.html">Works</a>
-        <a href="contact.html">Contact</a>
+        <div class="dropdown">
+            
+            <a href="project.html" class="dropbtn">Project</a>
+    
+            <img id="dropdownIcon" 
+                src="img/down-arrow.png" 
+                alt="Dropdown Icon" 
+                onclick="toggleDropdown()"
+                style="cursor: pointer; width: 16px; height: 16px; vertical-align: middle; margin-left: 5px;">
+        </div>
+
+         <!-- 細項 -->
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="project_capstone.html">Capstone Project</a>
+            <a href="project_compiler.html">Compiler Implementation</a>
+            <a href="project_windowedGame.html">Windowed Game Implementation</a>
+        </div>
     </div>
 
     <!-- 主要内容 -->
     <div class="container">
         <img src="./img/selfie.JPG" class="selfie" alt="Profile Picture" >
-        <div class = intro>
-            <h1>Hung-Ai, Huang</h1>
+        <div class="name-background">
+            <div class = intro>
+                <h1>HUNG-AI,<br>HUANG&nbsp;</h1>
+            </div>
         </div>
     </div>
+
     <div>
         <div class="about-box">
             <h2>About me</h2>
@@ -45,28 +64,28 @@
 
         <div class="skills-container">
             <div class="skill-item">
-                <img src="img/C++.png">
+                <img src="img/skills/C++.png">
             </div>
             <div class="skill-item">
-                <img src="img/C.png">
+                <img src="img/skills/C.png">
             </div>
             <div class="skill-item">
-                <img src="img/Cs.png">
+                <img src="img/skills/Cs.png">
             </div>
             <div class="skill-item">
-                <img src="img/python.png">
+                <img src="img/skills/python.png">
             </div>
             <div class="skill-item">
-                <img src="img/java.png">
+                <img src="img/skills/java.png">
             </div>
             <div class="skill-item">
-                <img src="img/flutter.jpg">
+                <img src="img/skills/flutter.jpg">
             </div>
             <div class="skill-item">
-                <img src="img/mySQL.png">
+                <img src="img/skills/mySQL.png">
             </div>
             <div class="skill-item">
-                <img src="img/html.png">
+                <img src="img/skills/html.png">
             </div>
 
         </div>
@@ -79,7 +98,7 @@
     </footer>
 
     <script src="js/navbar.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 </html>
