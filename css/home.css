@@ -61,7 +61,7 @@
  .skills-container {
     display: flex;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 自适应网格布局 */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     gap: 20px;
     padding: 20px;
     justify-items: center;
