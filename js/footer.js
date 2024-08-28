@@ -3,7 +3,7 @@ window.addEventListener('scroll', function() {
     const scrollHeight = window.innerHeight + window.pageYOffset;
     const documentHeight = document.documentElement.scrollHeight;
 
-    // 当用户滚动接近页面底部时显示页脚
+    //到底部時顯示
     if (scrollHeight >= documentHeight-1000) {
         footer.classList.add('visible');
     }
