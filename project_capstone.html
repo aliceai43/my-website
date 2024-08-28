@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/project_detail.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <title>capstone project</title>
+</head>
+<body>
+     <!-- menu -->
+     <div class="navbar">
+        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    </div>
+    
+    <!-- project -->
+    <div class="nav-list" id="navList">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            
+            <a href="project.html" class="dropbtn">Project</a>
+    
+            <img id="dropdownIcon" 
+                src="img/down-arrow.png" 
+                alt="Dropdown Icon" 
+                onclick="toggleDropdown()"
+                style="cursor: pointer; width: 16px; height: 16px; vertical-align: middle; margin-left: 5px;">
+        </div>
+
+         <!-- 細項 -->
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="project_capstone.html">Capstone Project</a>
+            <a href="project_compiler.html">Compiler Implementation</a>
+            <a href="project_windowedGame.html">Windowed Game Implementation</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Capstone Project</h1>
+        <p class="small-text">Note: This project was completed as part of a group effort. 
+            The following sections represent the parts I completed or contributed to individually.</p>
+
+        <h2>Introduction</h2>
+        <p>
+            This project was completed during my time at school as part of a capstone project. 
+            The goal was to connect multiple Raspberry Pi devices with PCs and mobile devices to implement the transmission and display of sound recognition results. 
+            The core of the project was running a sound recognition model on Raspberry Pi or a PC, 
+            then storing the recognition results on a PC, and finally displaying them on client devices (such as phones and smartwatches). 
+            This system was specifically designed for people with hearing impairments, helping them stay informed about what’s happening in their homes by placing multiple pi-devices throughout their residence. 
+            In this project, I independently completed the design and development of the frontend application, as well as the integration of data transmission and storage.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D_tKCHGImZg?si=xUzCMwL3VFlDBI2E" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+        <div class="section"> 
+            <h2>App Development</h2>
+            <div class="pictures_app">
+                <img src="img/capstone/app/home.png">
+                <img src="img/capstone/app/history.png">
+                <img src="img/capstone/app/detail.png">
+                <img src="img/capstone/app/user.png">
+                <img src="img/capstone/app/add_pi.png">
+                <img src="img/capstone/app/rename_pi.png">
+                <img src="img/capstone/app/create_home.png">
+                <img src="img/capstone/app/notification.png">
+            </div>
+            <div class="detail">
+            </div>
+            <div class="detail">
+                <h3>Language:</h3>
+                <p> Dart</p>
+            </div>
+            <div class="detail">
+                <h3>Framework:</h3>
+                <p> Flutter</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Data Transmission and Storage</h2>
+            <div class="pictures_trans">
+                <img src="img/capstone/data_transmission/data_trsns.png">
+            </div>
+            <div class="detail">
+                <h3>Language:</h3>
+                <p> Python</p>
+            </div>
+            <div class="detail">
+                <h3>Framework:</h3>
+                <p> Flask / Flask-SQLAlchemy</p>
+            </div>
+        </div>
+    </div>
+    <footer id="contact-footer">
+        <p>Contact me: <a href="mailto:aliceworkhard43@gmail.com">aliceworkhard43@gmail.com</a></p>
+        <p>&copy; 2024 Alice Huang</p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+</html>

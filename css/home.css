@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding: 50px;
+    min-height: 400px;
+}
+
+.name-background {
+    display: flex;
+    align-items:center;
+    position: absolute;
+    bottom: 00;
+    left: 0;
+    width: 100vw; /* 滿屏 */
+    background-color: #333; 
+    z-index: 1; /* 圖層 */
+}
+
+.intro {
+    flex: 1;
+    text-align: right; 
+    z-index: 2;
+    padding: 20px 20px 0px 30px;
+} 
+
+.intro h1 {
+    font-size: 95px; 
+    color: #d3d3d3;
+    margin: 30;
+    letter-spacing: 17px;
+    z-index: 2;
+}
+
+.selfie {
+    width: 380px;
+    height: 550px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.about-box {
+    background-color: #d3d3d3; 
+    width: 60%; 
+    padding: 30px; 
+    margin: 35px auto; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影 */
+}
+
+.about-box h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.about-box p {
+    font-size: 20px;
+    color: #333;
+}
+
+ .skills-container {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 自适应网格布局 */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.skill-item img:hover {
+    transform: scale(1.1); /* 滑鼠點到放大 */
+}
+
+.skill-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}

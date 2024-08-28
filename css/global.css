@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置全局字体和背景颜色 */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* 禁止水平滾動 */
+    overflow-y: auto;   /* 允許垂直值滾動 */
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* 页脚初始隐藏 */
+footer {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* 页脚中的链接样式 */
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer.visible {
+    opacity: 1; /* 当可见时完全显示 */
+}

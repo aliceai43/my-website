@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <!-- menu -->
+    <div class="navbar">
+        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    </div>
+    
+    <!-- project -->
+    <div class="nav-list" id="navList">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            
+            <a href="project.html" class="dropbtn">Project</a>
+    
+            <img id="dropdownIcon" 
+                src="img/down-arrow.png" 
+                alt="Dropdown Icon" 
+                onclick="toggleDropdown()"
+                style="cursor: pointer; width: 16px; height: 16px; vertical-align: middle; margin-left: 5px;">
+        </div>
+
+         <!-- 細項 -->
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="project_capstone.html">Capstone Project</a>
+            <a href="project_compiler.html">Compiler Implementation</a>
+            <a href="project_windowedGame.html">Windowed Game Implementation</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project-list">
+            <a href="project_capstone.html" class="project-button">
+                <img src="img/project/app.jpeg">
+                <div class="project-info">
+                    <p class="project-name">Capstone Project</p>
+                    <div class="project-detail">
+                        <p class="project-languages">Languages:&nbsp;Dart&nbsp;/&nbsp;Python</p>
+                        <p class="project-framework">Framework:&nbsp;Flutter&nbsp;/&nbsp;Flask&nbsp;/&nbsp;Flask-SQLAlchemy</p>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="project_compiler.html" class="project-button">
+                <img src="img/project/parser.png">
+                <div class="project-info">
+                    <p class="project-name">C-compiler Implementation </p>
+                    <div class="project-detail">
+                        <p class="project-languages">Languages:&nbsp;C&nbsp;/&nbsp;Python</p>
+                       <!-- <p class="project-framework">Framework: Flutter&nbsp;\&nbsp;Flask</p> -->
+                    </div>
+                </div>
+            </a>
+        
+            <a href="project_windowedGame.html" class="project-button">
+                <img src="img/project/flip_game.png">
+                <div class="project-info">
+                    <p class="project-name">Windows Form Game Implementation </p>
+                    <div class="project-detail">
+                        <p class="project-languages">Languages:&nbsp;C#</p>
+                        <p class="project-framework">Framework:&nbsp;.NET</p>
+                    </div>
+                </div>
+            </a>    
+        </div>
+    </div>
+    
+    
+    <footer id="contact-footer">
+        <p>Contact me: <a href="mailto:aliceworkhard43@gmail.com">aliceworkhard43@gmail.com</a></p>
+        <p>&copy; 2024 Alice Huang</p>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+</html>
